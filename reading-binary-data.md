@@ -63,6 +63,7 @@ of the alphabet.
 |  44 |  68 | `01000100` |   `D`   | Uppercase letter D              |
 |  45 |  69 | `01000101` |   `E`   | Uppercase letter E              |
 |  46 |  70 | `01000110` |   `F`   | Uppercase letter F              |
+
 ... 0x47-0x60 skipped ...
 
 | Hex | Dec | Binary     |  Char   | Description                     |
@@ -74,8 +75,8 @@ of the alphabet.
 |  65 | 101 | `01100101` |   `e`   | Lowercase letter e              |
 |  66 | 102 | `01100110` |   `f`   | Lowercase letter f              |
 
-If you notice, the 5th bit:
-![B binart.png](B binart.png)
+If you notice, the 5th bit:  
+![B binart.png](https://github.com/Nordgaren/reading-binary-data-1/blob/main/B%20binart.png?raw=true)
 
 Bit 5 is set for lowercase letters, and not set for uppercase ones. You may see bitwise operations setting and testing this
 bit in particular on ASCII and UTF-8 strings. Especially when doing case-insensitive comparisons. 
@@ -91,6 +92,7 @@ bit in particular on ASCII and UTF-8 strings. Especially when doing case-insensi
 | 58 | 88 | `01011000` | `X` | Uppercase letter X |
 | 59 | 89 | `01011001` | `Y` | Uppercase letter Y |
 | 5A | 90 | `01011010` | `Z` | Uppercase letter Z |
+
 ... 0x5B - 0x74 skipped ...
 
 | Hex | Dec | Binary | Char | Description |
@@ -117,13 +119,13 @@ https://learn.microsoft.com/en-us/windows/win32/com/structure-of-com-error-codes
 11/16/21
 https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-erref/0642cb2f-2075-4469-918c-4441e69c548a
 
-![Windows Error Code Bits.png](Windows Error Code Bits.png)
+![Windows Error Code Bits.png](https://github.com/Nordgaren/reading-binary-data-1/blob/main/Windows%20Error%20Code%20Bits.png?raw=true)
 
 ## Binary to Decimal and back
 Okay, so now we get to the technique. It's quite simple, actually. When you have a binary number, you just need to add the
 value of the exponent for each bit that is set. 
 
-![Binary Exponents.png](Binary Exponents.png)
+![Binary Exponents.png](https://github.com/Nordgaren/reading-binary-data-1/blob/main/Binary%20Exponents.png?raw=true)
 
 So for our example of `B` up above, aka `0b01000010`, we can see that we add 64 and 2, and get the decimal value of 66. If
 we want to go back, we can just subtract the highest power of 2 that is less than or equal to the decimal value. For example,
@@ -138,10 +140,10 @@ So, hexadecimal is actually much simpler to convert to binary and back. Just lik
 but you only have to worry about one "nibble," aka four bits, at a time!
 
 You might just notice the pattern, here:
-![Binary Exponents Hex.png](Binary Exponents Hex.png)
+![Binary Exponents Hex.png](https://github.com/Nordgaren/reading-binary-data-1/blob/main/Binary%20Exponents%20Hex.png?raw=true)
 
 But we can look at this even simple than that!
-![Binary Exponents Hex simplified.png](Binary Exponents Hex simplified.png)
+![Binary Exponents Hex simplified.png](https://github.com/Nordgaren/reading-binary-data-1/blob/main/Binary%20Exponents%20Hex%20simplified.png?raw=true)
 
 So, let's look at a 4 byte number:`1011111011101111`.
 
@@ -167,3 +169,4 @@ hexadecimal, and there is no other conversions here (ASCI text, etc.)
 `11011111100010010011111000100111011101111011100100101011010000010101010011000001111010010010101101000011110110010001001101100001`
 
 Turn it format: `flag{8e7438bd0182ce6b3dc8f72eab27dd6a}`
+
