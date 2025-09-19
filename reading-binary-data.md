@@ -148,20 +148,20 @@ But we can look at this even simple than that!
 So, let's look at a 4 byte number:`1011111011101111`.
 
 From left to right, let's look at it four bits, or a "nibble" at a time!
-> `1011`: We have 8 + 0 + 2 + 1 -> B
-> `1110`: We have 8 + 4 + 2 + 0 -> E
-> `1110`: We have 8 + 4 + 2 + 0 -> E
-> `1111`: We have 8 + 4 + 2 + 1 -> F
+> `1011`: We have 8 + 0 + 2 + 1 -> B  
+> `1110`: We have 8 + 4 + 2 + 0 -> E  
+> `1110`: We have 8 + 4 + 2 + 0 -> E  
+> `1111`: We have 8 + 4 + 2 + 1 -> F  
 
 Now everyones favorite hexadecimal number `11011110101011011011111011101111`
-> `1101`: We have 8 + 4 + 0 + 1 -> D
-> `1110`: We have 8 + 4 + 2 + 0 -> E
-> `1010`: We have 8 + 0 + 2 + 0 -> A
-> `1101`: We have 8 + 4 + 0 + 1 -> D
-> `1011`: We have 8 + 0 + 2 + 1 -> B
-> `1110`: We have 8 + 4 + 2 + 0 -> E
-> `1110`: We have 8 + 4 + 2 + 0 -> E
-> `1111`: We have 8 + 4 + 2 + 1 -> F
+> `1101`: We have 8 + 4 + 0 + 1 -> D  
+> `1110`: We have 8 + 4 + 2 + 0 -> E  
+> `1010`: We have 8 + 0 + 2 + 0 -> A  
+> `1101`: We have 8 + 4 + 0 + 1 -> D  
+> `1011`: We have 8 + 0 + 2 + 1 -> B  
+> `1110`: We have 8 + 4 + 2 + 0 -> E  
+> `1110`: We have 8 + 4 + 2 + 0 -> E  
+> `1111`: We have 8 + 4 + 2 + 1 -> F  
 
 ## Challenge
 Convert this MD5 hash from binary to hexadecimal. That is your flag. It is the exact number you get from converting this 
@@ -169,4 +169,5 @@ hexadecimal, and there is no other conversions here (ASCI text, etc.)
 `11011111100010010011111000100111011101111011100100101011010000010101010011000001111010010010101101000011110110010001001101100001`
 
 Turn it format: `flag{8e7438bd0182ce6b3dc8f72eab27dd6a}`
+
 
